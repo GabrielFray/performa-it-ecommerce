@@ -14,29 +14,486 @@
     <link rel="stylesheet" href="../styles/style.css" />
   </head>
   <body>
-    <div class="free-freight">
-      <span> FRETE GRÁTIS ACIMA DE R$199 </span>
-    </div>
-    <header>
-      <div class="box">
-        <img
-          class="logo-performa"
-          src="../assets/logo-performa.png"
-          alt="logo-performa-it"
-        />
-        <nav class="filters">
-          <a href="#">ROUPAS</a><a href="#">SAPATOS</a><a href="#">ACESSÓRIOS</a
-          ><a href="#">CASA E CUIDADO</a><a href="#">BAZAR</a>
-        </nav>
-      </div>
-      <div class="user-interaction">
-        <input type="text" placeholder="Digite sua busca aqui" />
-        <img class="search-icon" src="../assets/search.svg" alt="" />
-        <div class="content-btn">
-          <img class="icon" src="../assets/login.png" alt="" />
-          <img class="icon" src="../assets/ico-cart.png" alt="" />
+    <main>
+      <header>
+        <div class="free-freight">
+          <span> FRETE GRÁTIS ACIMA DE <strong>R$199</strong></span>
         </div>
+        <div class="box">
+          <img
+            class="logo-performa"
+            src="../assets/logo-performa.svg"
+            alt="logo performa it"
+          />
+          <nav class="filters">
+            <a href="#">ROUPAS</a><a href="#">SAPATOS</a
+            ><a href="#">ACESSÓRIOS</a><a href="#">CASA E CUIDADO</a
+            ><a href="#">BAZAR</a>
+          </nav>
+        </div>
+        <div class="user-interaction">
+          <input type="text" placeholder="Digite sua busca aqui" />
+          <label class="element"></label>
+          <div class="content-btn">
+            <img
+              class="icon"
+              src="../assets/perfil.svg"
+              alt="icone do perfil"
+            />
+            <img
+              class="icon"
+              src="../assets/ico-cart.svg"
+              alt="icone do carrinho"
+            />
+          </div>
+        </div>
+      </header>
+      <div class="line">
+        <div></div>
       </div>
-    </header>
+      <ul class="guide-sections">
+        <li>Home ></li>
+        <li>Roupas ></li>
+        <li><strong>Camisetas</strong></li>
+      </ul>
+      <section class="choice-clothes">
+        <div class="clothes">
+          <aside>
+            <img
+              class="aside-clothes"
+              src="../assets/shirt.svg"
+              alt="imagem de peça de roupa"
+            />
+            <img
+              class="aside-clothes"
+              src="../assets/shirt.svg"
+              alt="imagem de peça de roupa"
+            />
+            <img
+              class="aside-clothes"
+              src="../assets/shirt.svg"
+              alt="imagem de peça de roupa"
+            />
+            <img
+              class="aside-clothes"
+              src="../assets/shirt.svg"
+              alt="imagem de peça de roupa"
+            />
+          </aside>
+          <div class="content">
+            <img
+              class="main-clothe"
+              src="../assets/shirt.svg"
+              alt="imagem de peça de roupa"
+            />
+          </div>
+        </div>
+        <div class="content-choices">
+          <div class="content-price">
+            <div>
+              <h3 class="title">T-SHIRT JUMPING BEAR</h3>
+              <span>REF.: 104893 </span>
+            </div>
+            <div class="text">
+              <p>
+                De <span class="prices">R$ 499,00</span>
+                <strong> R$ 399,90 </strong>
+              </p>
+              <span>ou 4x de R$ 99,75 </span>
+            </div>
+          </div>
+          <form class="form-sizes">
+            <div>
+              <h4 class="measurement-guide">
+                Escolha o Tamanho
+                <span> Guia de Medidas </span>
+              </h4>
+              <div class="content-btn">
+                <button class="btn-size" type="button">UN</button>
+                <button class="btn-size" type="button">P</button>
+                <button class="btn-size" type="button">M</button>
+                <button class="btn-size" type="button">G</button>
+                <button class="btn-size" type="button">GG</button>
+                <button class="btn" type="button">EG</button>
+              </div>
+            </div>
+            <div class="choose-color">
+              <h5>Escolha a cor</h5>
+              <div class="colors">
+                <input class="black" type="radio" name="" id="" />
+                <input class="yellow" type="radio" name="" id="" />
+                <input class="red" type="radio" name="" id="" />
+                <input class="blue" type="radio" name="" id="" />
+                <input class="light-blue" type="radio" name="" id="" />
+                <input class="green" type="radio" name="" id="" />
+                <input class="orange" type="radio" name="" id="" />
+                <input class="light-brown" type="radio" name="" id="" />
+                <input class="brown" type="radio" name="" id="" />
+                <input class="white" type="radio" name="" id="" />
+              </div>
+            </div>
+            <button class="buy-btn" type="submit">COMPRAR</button>
+          </form>
+          <div class="calculate-shipping">
+            <label for="calculate-shipping">Calcule o valor do frete</label>
+            <div class="input-btn">
+              <input type="text" id="calculate-shipping" />
+              <button type="button">OK</button>
+            </div>
+            <span>Não sei o meu cep</span>
+          </div>
+          <div class="other-line">
+            <div></div>
+          </div>
+          <div class="description">
+            <p>DESCRIÇÃO E DETALHES</p>
+            <img src="../assets/icon-soma.svg" alt="icon de soma" />
+          </div>
+          <div class="other-line">
+            <div></div>
+          </div>
+          <div class="assessments-icon">
+            <img
+              src="../assets/avaliacao.svg"
+              alt="icone estrelas de avaliação"
+            />
+            <span>30 avaliações</span>
+          </div>
+          <div class="other-line">
+            <div></div>
+          </div>
+        </div>
+      </section>
+      <section class="content-recommended">
+        <div class="recommended">
+          <p><strong>VOCÊ TAMBÉM PODE GOSTAR</strong></p>
+          <button type="button">ver tudo</button>
+        </div>
+        <div class="recommended-clothes">
+          <div>
+            <img
+              class="clothes-img"
+              src="../assets/img.svg"
+              alt="imagem de roupas"
+            />
+            <div class="content-price">
+              <h3 class="title">T-SHIRT JUMPING BEAR 104893</h3>
+            </div>
+            <div class="text">
+              <p>
+                <span class="prices">R$ 299,00</span>
+                <strong> R$ 269,90 </strong>
+              </p>
+              <span>ou 3x de R$ 159,96 </span>
+            </div>
+          </div>
+          <div>
+            <img
+              class="clothes-img"
+              src="../assets/shirt.svg"
+              alt="imagem de roupas"
+            />
+            <div class="content-price">
+              <h3 class="title">T-SHIRT JUMPING BEAR 104893</h3>
+            </div>
+            <div class="text">
+              <p>
+                <span class="prices">R$ 299,00</span>
+                <strong> R$ 269,90 </strong>
+              </p>
+              <span>ou 3x de R$ 159,96 </span>
+            </div>
+          </div>
+          <div>
+            <img
+              class="clothes-img"
+              src="../assets/img (1).svg"
+              alt="imagem de roupas"
+            />
+            <div class="content-price">
+              <h3 class="title">T-SHIRT JUMPING BEAR 104893</h3>
+            </div>
+            <div class="text">
+              <p>
+                <span class="prices">R$ 299,00</span>
+                <strong> R$ 269,90 </strong>
+              </p>
+              <span>ou 3x de R$ 159,96 </span>
+            </div>
+          </div>
+          <div>
+            <img
+              class="clothes-img"
+              src="../assets/img (2).svg"
+              alt="imagem de roupas"
+            />
+            <div class="content-price">
+              <h3 class="title">T-SHIRT JUMPING BEAR 104893</h3>
+            </div>
+            <div class="text">
+              <p>
+                <span class="prices">R$ 299,00</span>
+                <strong> R$ 269,90 </strong>
+              </p>
+              <span>ou 3x de R$ 159,96 </span>
+            </div>
+          </div>
+          <div>
+            <img
+              class="clothes-img"
+              src="../assets/img (3).svg"
+              alt="imagem de roupas"
+            />
+            <div class="content-price">
+              <h3 class="title">T-SHIRT JUMPING BEAR 104893</h3>
+            </div>
+            <div class="text">
+              <p>
+                <span class="prices">R$ 299,00</span>
+                <strong> R$ 269,90 </strong>
+              </p>
+              <span>ou 3x de R$ 159,96 </span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="sections-user-reviews">
+        <h2>AVALIAÇÕES E DÚVIDAS</h2>
+        <h3>SOBRE ESTE PRODUTO</h3>
+      </div>
+      <section class="user-reviews">
+        <section class="evaluations">
+          <div class="title-evaluations">
+            <h4>Avaliações</h4>
+            <div class="content-stars">
+              <img
+                src="../assets/stars.svg"
+                alt="icone estrelas de avaliação"
+              />
+              <span> Baseado em 56 avaliações</span>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="content-comments">
+            <div class="client-name">
+              <span>Nome do cliente</span>
+              <div class="verified-purchase">
+                <img
+                  src="../assets/check-yourwiens.svg"
+                  alt="icone de aprovado"
+                />
+                <p>Compra Verificada</p>
+              </div>
+            </div>
+            <div class="session-comment">
+              <div class="star-rate">
+                <img
+                  src="../assets/stars.svg"
+                  alt="icone estrelas de avaliação"
+                />
+                <span>Há 6 mes(es)</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                lacus mi, egestas et suscipit quis, mattis eget tellus. Maecenas
+                tempor blandit e.
+              </p>
+              <div class="verified-purchase">
+                <img
+                  src="../assets/check-yourwiens.svg"
+                  alt="icone de aprovado"
+                />
+                <p>Sim, recomendaria este produto a um amigo</p>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="content-comments">
+            <div class="client-name">
+              <span>Nome do cliente</span>
+              <div class="verified-purchase">
+                <img
+                  src="../assets/check-yourwiens.svg"
+                  alt="icone de aprovado"
+                />
+                <p>Compra Verificada</p>
+              </div>
+            </div>
+            <div class="session-comment">
+              <div class="star-rate">
+                <img
+                  src="../assets/stars.svg"
+                  alt="icone estrelas de avaliação"
+                />
+                <span>Há 6 mes(es)</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                lacus mi, egestas et suscipit quis, mattis eget tellus. Maecenas
+                tempor blandit e.
+              </p>
+              <div class="verified-purchase">
+                <img
+                  src="../assets/check-yourwiens.svg"
+                  alt="icone de aprovado"
+                />
+                <p>Sim, recomendaria este produto a um amigo</p>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="content-comments">
+            <div class="client-name">
+              <span>Nome do cliente</span>
+              <div class="verified-purchase">
+                <img
+                  src="../assets/check-yourwiens.svg"
+                  alt="icone de aprovado"
+                />
+                <p>Compra Verificada</p>
+              </div>
+            </div>
+            <div class="session-comment">
+              <div class="star-rate">
+                <img
+                  src="../assets/stars.svg"
+                  alt="icone estrelas de avaliação"
+                />
+                <span>Há 6 mes(es)</span>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                lacus mi, egestas et suscipit quis, mattis eget tellus. Maecenas
+                tempor blandit e.
+              </p>
+              <div class="verified-purchase">
+                <img src="../assets/check-yourwiens.svg" alt="" />
+                <p>Sim, recomendaria este produto a um amigo</p>
+              </div>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="content-navigations">
+            <div class="navigations">
+              <img
+                src="../assets/ico-arrow-left.svg"
+                alt="icone flexa esquerda"
+              />
+              <button>1</button>
+              <button>2</button>
+              <button>3</button>
+              <button>4</button>
+              <button>5</button>
+              <img src="../assets/ico-arrow.svg" alt="icone flecha direita" />
+            </div>
+            <button class="generic-button" type="button">AVALIAR</button>
+          </div>
+        </section>
+        <div class="break"></div>
+        <section class="questions">
+          <div class="title-evaluations">
+            <h4>Dúvidas</h4>
+            <span
+              >Tem alguma dúvida sobre este produto? Pergunte ao lojista e a
+              outros compradores!</span
+            >
+            <div class="content-info">
+              <p>
+                Pergunte sobre o produto, como utilizá-lo ou peça alguma dica
+              </p>
+            </div>
+            <button class="generic-button" type="button">PERGUNTAR</button>
+          </div>
+          <div class="content-client-questions">
+            <span class="client-questions"> Nome do cliente </span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              eleifend dui eu enim porttitor, vitae ultrices dolor aliquet.
+              Pellentesque convallis, ligula eu dictum bibendum, nibh neque
+              aliquam enim, ornare congue dui urna eget velit.
+            </p>
+            <div class="store-response">
+              <div class="vertical-line"></div>
+              <span class="client-questions"> Loja </span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                eleifend dui eu enim porttitor, vitae ultrices dolor aliquet.
+                Pellentesque convallis, ligula eu dictum bibendum, nibh neque
+                aliquam enim, ornare congue dui urna eget velit.
+              </p>
+            </div>
+            <span class="client-questions"> Nome do cliente </span>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+              eleifend dui eu enim porttitor, vitae ultrices dolor aliquet.
+              Pellentesque convallis, ligula eu dictum bibendum, nibh neque
+              aliquam enim, ornare congue dui urna eget velit.
+            </p>
+
+            <div class="store-response">
+              <div class="vertical-line"></div>
+              <span class="client-questions"> Loja </span>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+                eleifend dui eu enim porttitor, vitae ultrices dolor aliquet.
+                Pellentesque convallis, ligula eu dictum bibendum, nibh neque
+                aliquam enim, ornare congue dui urna eget velit.
+              </p>
+            </div>
+          </div>
+        </section>
+      </section>
+      <footer>
+        <div class="newsletter">
+          <h4>Newsletter</h4>
+          <p>
+            Assine nossa newsletter e fique por dentro de nossas ofertas e
+            novidades.
+          </p>
+          <div class="email-input">
+            <input type="text" placeholder="Informe seu Email" />
+            <button type="submit">ENVIAR</button>
+          </div>
+        </div>
+        <div class="footer">
+          <h4>Sobre</h4>
+          <span>Quem Somos</span>
+          <span>Onde Encontrar</span>
+          <span>Blog</span>
+        </div>
+        <div class="footer">
+          <h4>Ajuda</h4>
+          <span>Pedidos</span>
+          <span>Trocas</span>
+          <span>FAQ</span>
+          <span>Revenda</span>
+        </div>
+        <div class="footer">
+          <h4>Redes Sociais</h4>
+          <div class="medias">
+            <img src="../assets/Facebook.svg" alt="icone facebook" />
+            <img src="../assets/instagram.svg" alt="icone instagram" />
+            <img src="../assets/spotify.svg" alt="icone spotify" />
+          </div>
+        </div>
+        <div class="footer">
+          <h4>Segurança</h4>
+          <div class="medias">
+            <img src="../assets/obs.svg" alt="icone-avaliação" />
+            <img
+              src="../assets/yourviews.svg"
+              alt="icone selo loja confiável"
+            />
+          </div>
+        </div>
+        <div class="location">
+          <p>
+            <span>HERMOSO COMPADRE CONFECÇÃO LTDA</span> - CNPJ
+            12.069.071/0001-20 | RUA ANTÔNIO ALVES TAVEIRA, 2160 - VILA TÓTOLI,
+            FRANCA-SP - CEP 14409-123
+          </p>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>
