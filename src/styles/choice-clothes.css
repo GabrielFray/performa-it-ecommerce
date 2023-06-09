@@ -1,0 +1,272 @@
+.other-line > div {
+  background-color: var(--grey-1);
+  width: 100%;
+  height: 2px;
+}
+
+.guide-sections {
+  display: flex;
+  gap: 5px;
+  padding: 15px;
+}
+
+.choice-clothes {
+  display: flex;
+  padding: 0px 24px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  height: 100px;
+}
+
+aside > .aside-clothes {
+  max-width: 100%;
+  height: auto;
+}
+
+.clothes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 750px;
+}
+
+.content > .main-clothe {
+  max-width: 100%;
+  height: auto;
+}
+
+.content-price {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.text > p {
+  font-size: 0.75rem;
+  padding: 6px 0px;
+}
+
+.prices {
+  font-size: 0.75rem;
+  color: var(--grey-3);
+  text-decoration: line-through;
+}
+
+p > strong {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.text > span {
+  font-size: 0.875rem;
+}
+
+.content-choices {
+  width: 458px;
+  height: 594px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form-sizes {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.measurement-guide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 328px;
+  padding: 19px 0px;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.measurement-guide > span {
+  border: 1px solid var(--grey-1);
+  padding: 3px 25px;
+}
+
+.btn-size {
+  width: 32px;
+  height: 32px;
+  border: 1.5px solid var(--black-0);
+  background-color: transparent;
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+
+.disable {
+  border: none;
+  background-color: var(--grey-2);
+  color: var(--grey-4);
+}
+
+.btn-size:focus {
+  background-color: var(--black-0);
+  color: var(--white-fixed);
+}
+
+input[type="radio"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.choose-color {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.colors {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.black {
+  background-color: var(--black-0);
+}
+.yellow {
+  background-color: #e3c109;
+}
+.red {
+  background-color: #c72e2e;
+}
+.blue {
+  background-color: #4176ab;
+}
+.light-blue {
+  background-color: #b2d4e5;
+}
+.green {
+  background-color: #99c76b;
+}
+.orange {
+  background-color: #ec7646;
+}
+.light-brown {
+  background-color: #be5230;
+}
+.brown {
+  background-color: #731a26;
+}
+.white {
+  border: 1px solid #ebebeb;
+}
+
+.buy-btn {
+  width: 100%;
+  height: 48px;
+  background-color: var(--black-0);
+  color: var(--white-fixed);
+  border: none;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.buy-btn:hover {
+  background-color: var(--white-fixed);
+  border: 1px solid var(--black-0);
+  color: var(--black-0);
+}
+
+.calculate-shipping {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.calculate-shipping > label {
+  font-size: 0.875rem;
+}
+
+.calculate-shipping > span {
+  font-size: 0.75rem;
+  color: var(--grey2);
+}
+
+.input-btn > input {
+  width: 260px;
+  height: 32px;
+  border: 1px solid var(--grey-3);
+}
+
+.input-btn > button {
+  width: 40px;
+  height: 32px;
+  background-color: var(--grey-3);
+  border: none;
+  color: var(--white-fixed);
+  font-weight: 700;
+  font-size: 0.75rem;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.description > p {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.description > img {
+  cursor: pointer;
+}
+.assessments-icon {
+  display: flex;
+  gap: 17px;
+  align-items: center;
+}
+
+@media (max-width: 1300px) {
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content-choices {
+    width: 100%;
+  }
+
+  .choice-clothes {
+    row-gap: 16px;
+  }
+
+  .input-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .input-btn > input {
+    width: 80%;
+  }
+
+  .input-btn > button {
+    width: 15%;
+  }
+}

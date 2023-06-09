@@ -1,0 +1,93 @@
+.footer {
+  background-color: var(--grey-2);
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  padding: 24px;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 328px;
+}
+
+.content__sub-footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.email-input {
+  display: flex;
+  width: 100%;
+}
+
+.email-input > input {
+  height: 32px;
+  width: 100%;
+  border: none;
+}
+
+.email-input > input::placeholder {
+  padding: 8px;
+  font-size: 0.875rem;
+  color: var(--black-0);
+}
+
+.email-input > button {
+  width: 88px;
+  height: 32px;
+  border: none;
+  background-color: var(--black-0);
+  color: var(--white-fixed);
+  font-size: 0.75rem;
+}
+
+.email-input > button:hover {
+  background-color: var(--white-fixed);
+  color: var(--black-0);
+  border: 1px solid var(--black-0);
+}
+
+.sub__footer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  cursor: pointer;
+}
+
+.medias {
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.location {
+  width: 100%;
+  background-color: var(--black-0);
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding-left: 24px;
+  color: var(--white-fixed);
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 15px;
+}
+
+.location > p > span {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .content__sub-footer {
+    flex-wrap: wrap;
+  }
+}
