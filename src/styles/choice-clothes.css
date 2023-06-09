@@ -33,7 +33,7 @@ aside > .aside-clothes {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  max-width: 750px;
+  max-width: 570px;
 }
 
 .content > .main-clothe {

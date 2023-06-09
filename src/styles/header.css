@@ -30,9 +30,9 @@
   padding: 12px;
 }
 
-.sub__header > .logo-performa {
-  width: 152px;
-  height: 36px;
+.logo-performa {
+  width: 170px;
+  height: 42px;
 }
 .sub__header > .user-interaction {
   display: flex;
@@ -75,7 +75,7 @@
   background-repeat: no-repeat;
   position: relative;
   top: 5px;
-  left: -32px;
+  left: -30px;
 }
 
 .content__nav {
@@ -128,5 +128,12 @@
 
   .menu {
     display: block;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .sub__header {
+    padding: 10px 11px;
+    justify-content: space-between;
   }
 }

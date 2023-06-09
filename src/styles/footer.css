@@ -70,7 +70,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  padding-left: 24px;
+  padding: 14px 24px;
   color: var(--white-fixed);
   font-size: 0.75rem;
   font-weight: 400;
