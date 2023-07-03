@@ -1,0 +1,19 @@
+@import "./src/styles/reset.css";
+@import "./src/styles/header.css";
+@import "./src/styles/choice-clothes.css";
+@import "./src/styles/carousel.css";
+@import "./src/styles/reviews.css";
+@import "./src/styles/footer.css";
+@import "./src/styles/cart.css";
+
+:root {
+  --black-0: #000000;
+  --grey-0: #d2d2d2;
+  --grey-1: #ececec;
+  --grey-2: #f2f2f2;
+  --grey-3: #484848;
+  --grey-4: #717171;
+  --grey-5: #ebebeb;
+  --grey-2-opacity: #f2f2f24f;
+  --white-fixed: #ffff;
+}

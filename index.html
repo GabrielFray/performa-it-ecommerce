@@ -13,13 +13,39 @@
     />
     <link
       rel="shortcut icon"
-      href="assets/logo-performa.svg"
+      href="src/assets/logo-performa.svg"
       type="image/x-icon"
     />
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <main>
+    <main class="main">
+      <aside class="cart-sidebar cart-disable">
+        <div class="cart-header">
+          <div class="sub__header-cart">
+            <figure class="content-image">
+              <img
+                class="icon"
+                src="./src/assets/icon-carrinho.svg"
+                alt="Imagem de um sacola de compra"
+              />
+              <span class="clothes-count">0</span>
+            </figure>
+            <span>Minha sacola</span>
+          </div>
+          <img
+            class="icon-close"
+            src="./src/assets/icon-close.svg"
+            alt="Botão de fechar"
+          />
+        </div>
+        <div class="cart-line">
+          <div></div>
+        </div>
+        <div class="empty-cart"></div>
+        <ul class="content__list-clothes"></ul>
+        <div class="cart-footer"></div>
+      </aside>
       <header class="header">
         <div class="free-freight">
           <span> FRETE GRÁTIS ACIMA DE <strong>R$199</strong></span>
@@ -28,7 +54,7 @@
           <div class="content__nav">
             <img
               class="logo-performa"
-              src="./assets/logo-performa.svg"
+              src="./src/assets/logo-performa.svg"
               alt="logo performa it"
             />
             <nav class="filters">
@@ -43,231 +69,194 @@
             <div class="content-btn">
               <img
                 class="perfil icon"
-                src="./assets/perfil.svg"
+                src="./src/assets/perfil.svg"
                 alt="icone do perfil"
               />
-              <img
-                class="icon"
-                src="./assets/ico-cart.svg"
-                alt="icone do carrinho"
-              />
+              <figure class="header__content-image">
+                <img
+                  class="icon-cart"
+                  src="./src/assets/icon-carrinho.svg"
+                  alt="Imagem de um sacola de compra"
+                />
+                <span class="header__clothes-count">0</span>
+              </figure>
               <img
                 class="menu icon"
-                src="./assets/menu.svg"
-                alt="icone do carrinho"
+                src="./src/assets/menu.svg"
+                alt="icone do menu"
               />
             </div>
           </div>
         </div>
+        <div class="line">
+          <div></div>
+        </div>
       </header>
-      <div class="line">
-        <div></div>
-      </div>
+
       <ul class="guide-sections">
         <li>Home ></li>
         <li>Roupas ></li>
         <li><strong>Camisetas</strong></li>
       </ul>
       <section class="choice-clothes">
-        <div class="clothes">
-          <aside>
-            <img
-              class="aside-clothes"
-              src="./assets/shirt.svg"
-              alt="imagem de peça de roupa"
-            />
-            <img
-              class="aside-clothes"
-              src="./assets/shirt.svg"
-              alt="imagem de peça de roupa"
-            />
-            <img
-              class="aside-clothes"
-              src="./assets/shirt.svg"
-              alt="imagem de peça de roupa"
-            />
-            <img
-              class="aside-clothes"
-              src="./assets/shirt.svg"
-              alt="imagem de peça de roupa"
-            />
-          </aside>
-          <div class="content">
-            <img
-              class="main-clothe"
-              src="./assets/shirt.svg"
-              alt="imagem de peça de roupa"
-            />
-          </div>
-        </div>
-        <div class="content-choices">
-          <div class="content-price">
-            <div>
-              <h3 class="title">T-SHIRT JUMPING BEAR</h3>
-              <span>REF.: 104893 </span>
-            </div>
-            <div class="text">
-              <p>
-                De <span class="prices">R$ 499,00</span>
-                <strong> R$ 399,90 </strong>
-              </p>
-              <span>ou 4x de R$ 99,75 </span>
+        <div class="content-clothes">
+          <div class="clothes">
+            <aside>
+              <ul class="content-aside__clothes">
+                <li>
+                  <img class="aside-clothes" src="" alt="" />
+                </li>
+                <li>
+                  <img class="aside-clothes" src="" alt="" />
+                </li>
+                <li>
+                  <img class="aside-clothes" src="" alt="" />
+                </li>
+                <li>
+                  <img class="aside-clothes" src="" alt="" />
+                </li>
+              </ul>
+            </aside>
+            <div class="content">
+              <img class="main-clothe" src="" alt="" />
             </div>
           </div>
-          <form class="form-sizes">
-            <div>
-              <h4 class="measurement-guide">
-                Escolha o Tamanho
-                <span> Guia de Medidas </span>
-              </h4>
-              <div class="content-btn">
-                <button class="btn-size" type="button">UN</button>
-                <button class="btn-size" type="button">P</button>
-                <button class="btn-size" type="button">M</button>
-                <button class="btn-size" type="button">G</button>
-                <button class="btn-size" type="button">GG</button>
-                <button class="btn-size disable" type="button">EG</button>
+          <div class="content-choices">
+            <div class="content-price">
+              <div>
+                <h3 class="title"></h3>
+                <p>REF.: <span class="clothe-id"></span></p>
+              </div>
+              <div class="text">
+                <p>
+                  De
+                  <span class="original-price"></span>
+                  <strong class="discount-price"></strong>
+                </p>
+                <p>ou 3x de <span class="division-price"></span></p>
               </div>
             </div>
-            <div class="choose-color">
-              <h5>Escolha a cor</h5>
-              <div class="colors">
-                <input class="black" type="radio" name="" id="" />
-                <input class="yellow" type="radio" name="" id="" />
-                <input class="red" type="radio" name="" id="" />
-                <input class="blue" type="radio" name="" id="" />
-                <input class="light-blue" type="radio" name="" id="" />
-                <input class="green" type="radio" name="" id="" />
-                <input class="orange" type="radio" name="" id="" />
-                <input class="light-brown" type="radio" name="" id="" />
-                <input class="brown" type="radio" name="" id="" />
-                <input class="white" type="radio" name="" id="" />
+            <form class="form-sizes">
+              <div>
+                <h4 class="measurement-guide">
+                  Escolha o Tamanho
+                  <span> Guia de Medidas </span>
+                </h4>
+                <div class="content-btn">
+                  <input
+                    class="size-input"
+                    type="radio"
+                    value="un"
+                    id="size-un"
+                  />
+                  <label class="label-size" for="size-un">UN</label>
+                  <input
+                    class="size-input"
+                    type="radio"
+                    value="p"
+                    id="size-p"
+                  />
+                  <label class="label-size" for="size-p">P</label>
+                  <input
+                    class="size-input"
+                    type="radio"
+                    value="m"
+                    id="size-m"
+                  />
+                  <label class="label-size" for="size-m">M</label>
+                  <input
+                    class="size-input"
+                    type="radio"
+                    value="g"
+                    id="size-g"
+                  />
+                  <label class="label-size" for="size-g">G</label>
+                  <input
+                    class="size-input"
+                    type="radio"
+                    value="gg"
+                    id="size-gg"
+                  />
+                  <label class="label-size" for="size-gg">GG</label>
+                  <input
+                    class="size-input"
+                    type="radio"
+                    value="eg"
+                    id="size-eg"
+                  />
+                  <label class="label-size disable" for="size-eg">EG</label>
+                </div>
               </div>
+              <div class="choose-color">
+                <h5>Escolha a cor</h5>
+                <div class="colors">
+                  <input class="color-input" type="radio" id="black" />
+                  <label class="black label-style" for="black"></label>
+                  <input class="color-input" type="radio" id="yellow" />
+                  <label class="yellow label-style" for="yellow"></label>
+                  <input class="color-input" type="radio" id="red" />
+                  <label class="red label-style" for="red"></label>
+                  <input class="color-input" type="radio" id="blue" />
+                  <label class="blue label-style" for="blue"></label>
+                  <input class="color-input" type="radio" id="light-blue" />
+                  <label
+                    class="light-blue label-style"
+                    for="light-blue"
+                  ></label>
+                  <input class="color-input" type="radio" id="green" />
+                  <label class="green label-style" for="green"></label>
+                  <input class="color-input" type="radio" id="orange" />
+                  <label class="orange label-style" for="orange"></label>
+                  <input class="color-input" type="radio" id="light-brown" />
+                  <label
+                    class="light-brown label-style"
+                    for="light-brown"
+                  ></label>
+                  <input class="color-input" type="radio" id="brown" />
+                  <label class="brown label-style" for="brown"></label>
+                  <input class="color-input" type="radio" id="white" />
+                  <label class="white label-style" for="white"></label>
+                </div>
+              </div>
+              <button class="button-buy" type="button">COMPRAR</button>
+            </form>
+            <div class="calculate-shipping">
+              <label for="calculate-shipping">Calcule o valor do frete</label>
+              <div class="input-btn">
+                <input type="text" id="calculate-shipping" />
+                <button type="button">OK</button>
+              </div>
+              <span>Não sei o meu cep</span>
             </div>
-            <button class="buy-btn" type="submit">COMPRAR</button>
-          </form>
-          <div class="calculate-shipping">
-            <label for="calculate-shipping">Calcule o valor do frete</label>
-            <div class="input-btn">
-              <input type="text" id="calculate-shipping" />
-              <button type="button">OK</button>
+            <div class="other-line">
+              <div></div>
             </div>
-            <span>Não sei o meu cep</span>
-          </div>
-          <div class="other-line">
-            <div></div>
-          </div>
-          <div class="description">
-            <p>DESCRIÇÃO E DETALHES</p>
-            <img src="./assets/icon-soma.svg" alt="icon de soma" />
-          </div>
-          <div class="other-line">
-            <div></div>
-          </div>
-          <div class="assessments-icon">
-            <img
-              src="./assets/avaliacao.svg"
-              alt="icone estrelas de avaliação"
-            />
-            <span>30 avaliações</span>
-          </div>
-          <div class="other-line">
-            <div></div>
+            <div class="description">
+              <p>DESCRIÇÃO E DETALHES</p>
+              <img src="./src/assets/icon-soma.svg" alt="icon de soma" />
+            </div>
+            <div class="other-line">
+              <div></div>
+            </div>
+            <div class="assessments-icon">
+              <img
+                src="./src/assets/avaliacao.svg"
+                alt="icone estrelas de avaliação"
+              />
+              <span>30 avaliações</span>
+            </div>
+            <div class="other-line">
+              <div></div>
+            </div>
           </div>
         </div>
       </section>
       <section class="content-recommended">
         <div class="recommended">
-          <p><strong>VOCÊ TAMBÉM PODE GOSTAR</strong></p>
+          <p class="releases">Lançamentos</p>
           <button type="button">ver tudo</button>
         </div>
-        <div class="recommended-clothes">
-          <div>
-            <img
-              class="clothes-img"
-              src="./assets/img.svg"
-              alt="imagem de roupas"
-            />
-            <div class="content-price">
-              <h3 class="title">T-SHIRT JUMPING BEAR 104893</h3>
-            </div>
-            <div class="text">
-              <p>
-                <span class="prices">R$ 299,00</span>
-                <strong> R$ 269,90 </strong>
-              </p>
-              <span>ou 3x de R$ 159,96 </span>
-            </div>
-          </div>
-          <div>
-            <img
-              class="clothes-img"
-              src="./assets/shirt.svg"
-              alt="imagem de roupas"
-            />
-            <div class="content-price">
-              <h3 class="title">T-SHIRT JUMPING BEAR 104893</h3>
-            </div>
-            <div class="text">
-              <p>
-                <span class="prices">R$ 299,00</span>
-                <strong> R$ 269,90 </strong>
-              </p>
-              <span>ou 3x de R$ 159,96 </span>
-            </div>
-          </div>
-          <div>
-            <img
-              class="clothes-img"
-              src="./assets/img (1).svg"
-              alt="imagem de roupas"
-            />
-            <div class="content-price">
-              <h3 class="title">T-SHIRT JUMPING BEAR 104893</h3>
-            </div>
-            <div class="text">
-              <p>
-                <span class="prices">R$ 299,00</span>
-                <strong> R$ 269,90 </strong>
-              </p>
-              <span>ou 3x de R$ 159,96 </span>
-            </div>
-          </div>
-          <div>
-            <img
-              class="clothes-img"
-              src="./assets/img (2).svg"
-              alt="imagem de roupas"
-            />
-            <div class="content-price">
-              <h3 class="title">T-SHIRT JUMPING BEAR 104893</h3>
-            </div>
-            <div class="text">
-              <p>
-                <span class="prices">R$ 299,00</span>
-                <strong> R$ 269,90 </strong>
-              </p>
-              <span>ou 3x de R$ 159,96 </span>
-            </div>
-          </div>
-          <div>
-            <img
-              class="clothes-img"
-              src="./assets/img (3).svg"
-              alt="imagem de roupas"
-            />
-            <div class="content-price">
-              <h3 class="title">T-SHIRT JUMPING BEAR 104893</h3>
-            </div>
-            <div class="text">
-              <p>
-                <span class="prices">R$ 299,00</span>
-                <strong> R$ 269,90 </strong>
-              </p>
-              <span>ou 3x de R$ 159,96 </span>
-            </div>
-          </div>
-        </div>
+        <div class="recommended-clothes"></div>
       </section>
       <div class="sections-user-reviews">
         <h2>Avaliações e dúvidas <strong>Sobre este produto</strong></h2>
@@ -277,7 +266,10 @@
           <div class="title-evaluations">
             <h4>Avaliações</h4>
             <div class="content-stars">
-              <img src="./assets/stars.svg" alt="icone estrelas de avaliação" />
+              <img
+                src="./src/assets/stars.svg"
+                alt="icone estrelas de avaliação"
+              />
               <span> Baseado em 56 avaliações</span>
             </div>
           </div>
@@ -287,7 +279,7 @@
               <span>Nome do cliente</span>
               <div class="verified-purchase">
                 <img
-                  src="./assets/check-yourwiens.svg"
+                  src="./src/assets/check-yourwiens.svg"
                   alt="icone de aprovado"
                 />
                 <p>Compra Verificada</p>
@@ -296,7 +288,7 @@
             <div class="session-comment">
               <div class="star-rate">
                 <img
-                  src="./assets/stars.svg"
+                  src="./src/assets/stars.svg"
                   alt="icone estrelas de avaliação"
                 />
                 <span>Há 6 mes(es)</span>
@@ -308,7 +300,7 @@
               </p>
               <div class="verified-purchase">
                 <img
-                  src="./assets/check-yourwiens.svg"
+                  src="./src/assets/check-yourwiens.svg"
                   alt="icone de aprovado"
                 />
                 <p>Sim, recomendaria este produto a um amigo</p>
@@ -321,7 +313,7 @@
               <span>Nome do cliente</span>
               <div class="verified-purchase">
                 <img
-                  src="./assets/check-yourwiens.svg"
+                  src="./src/assets/check-yourwiens.svg"
                   alt="icone de aprovado"
                 />
                 <p>Compra Verificada</p>
@@ -330,7 +322,7 @@
             <div class="session-comment">
               <div class="star-rate">
                 <img
-                  src="./assets/stars.svg"
+                  src="./src/assets/stars.svg"
                   alt="icone estrelas de avaliação"
                 />
                 <span>Há 6 mes(es)</span>
@@ -342,7 +334,7 @@
               </p>
               <div class="verified-purchase">
                 <img
-                  src="./assets/check-yourwiens.svg"
+                  src="./src/assets/check-yourwiens.svg"
                   alt="icone de aprovado"
                 />
                 <p>Sim, recomendaria este produto a um amigo</p>
@@ -355,7 +347,7 @@
               <span>Nome do cliente</span>
               <div class="verified-purchase">
                 <img
-                  src="./assets/check-yourwiens.svg"
+                  src="./src/assets/check-yourwiens.svg"
                   alt="icone de aprovado"
                 />
                 <p>Compra Verificada</p>
@@ -364,7 +356,7 @@
             <div class="session-comment">
               <div class="star-rate">
                 <img
-                  src="./assets/stars.svg"
+                  src="./src/assets/stars.svg"
                   alt="icone estrelas de avaliação"
                 />
                 <span>Há 6 mes(es)</span>
@@ -375,7 +367,7 @@
                 tempor blandit e.
               </p>
               <div class="verified-purchase">
-                <img src="./assets/check-yourwiens.svg" alt="" />
+                <img src="./src/assets/check-yourwiens.svg" alt="" />
                 <p>Sim, recomendaria este produto a um amigo</p>
               </div>
             </div>
@@ -384,7 +376,7 @@
           <div class="content-navigations">
             <div class="navigations">
               <img
-                src="./assets/ico-arrow-left.svg"
+                src="./src/assets/ico-arrow-left.svg"
                 alt="icone flexa esquerda"
               />
               <button>1</button>
@@ -392,7 +384,10 @@
               <button>3</button>
               <button>4</button>
               <button>5</button>
-              <img src="./assets/ico-arrow.svg" alt="icone flecha direita" />
+              <img
+                src="./src/assets/ico-arrow.svg"
+                alt="icone flecha direita"
+              />
             </div>
             <button class="generic-button" type="button">AVALIAR</button>
           </div>
@@ -481,17 +476,17 @@
             <div class="sub__footer">
               <h4>Redes Sociais</h4>
               <div class="medias">
-                <img src="./assets/Facebook.svg" alt="icone facebook" />
-                <img src="./assets/instagram.svg" alt="icone instagram" />
-                <img src="./assets/spotify.svg" alt="icone spotify" />
+                <img src="./src/assets/Facebook.svg" alt="icone facebook" />
+                <img src="./src/assets/instagram.svg" alt="icone instagram" />
+                <img src="./src/assets/spotify.svg" alt="icone spotify" />
               </div>
             </div>
             <div class="sub__footer">
               <h4>Segurança</h4>
               <div class="medias">
-                <img src="./assets/obs.svg" alt="icone-avaliação" />
+                <img src="./src/assets/obs.svg" alt="icone-avaliação" />
                 <img
-                  src="./assets/yourviews.svg"
+                  src="./src/assets/yourviews.svg"
                   alt="icone selo loja confiável"
                 />
               </div>
@@ -507,5 +502,6 @@
         </div>
       </footer>
     </main>
+    <script type="module" src="./src/js/clothes.js"></script>
   </body>
 </html>
