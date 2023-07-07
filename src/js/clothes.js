@@ -1,10 +1,21 @@
 import { database } from "../../main.js";
 
 const sizeInputs = document.querySelectorAll(".size-input");
+const colorInputs = document.querySelectorAll(".color-input");
 
 sizeInputs.forEach((input) => {
   input.addEventListener("click", function () {
     sizeInputs.forEach((otherInput) => {
+      if (otherInput !== input) {
+        otherInput.checked = false;
+      }
+    });
+  });
+});
+
+colorInputs.forEach((input) => {
+  input.addEventListener("click", function () {
+    colorInputs.forEach((otherInput) => {
       if (otherInput !== input) {
         otherInput.checked = false;
       }
@@ -193,6 +204,7 @@ const createClothesCard = (item) => {
   imageLess.classList.add("button-quantity-less");
 
   const quantityCount = document.createElement("span");
+  quantityCount.classList.add("quantity-count");
 
   quantityCount.innerHTML = item.quantity;
 
@@ -283,7 +295,7 @@ const showCartFooter = (items) => {
 
   const subtotalPrice = document.createElement("span");
   subtotalPrice.classList.add("subtotal");
-  subtotalPrice.innerHTML = 0;
+  subtotalPrice.innerHTML = (0).toFixed(2);
 
   subtotalCart(items, subtotalPrice);
 
@@ -310,6 +322,10 @@ const showCartFooter = (items) => {
   buttonCheckout.type = "button";
   buttonCheckout.innerHTML = "Finalizar compra";
 
+  buttonCheckout.addEventListener("click", () => {
+    alert(`Seu pedido: ${JSON.stringify(items)}`);
+  });
+
   contentSubtotalButtons.append(text, keepShopping, buttonCheckout);
 
   cartFooter.append(subFooterCart, subtotalLine, contentSubtotalButtons);
@@ -321,11 +337,20 @@ const showCartFooter = (items) => {
 
 addEventListener("click", (event) => {
   const emptyCart = document.querySelector(".empty-cart");
-  const cartFooter = document.querySelector(".cart-footer");
 
   const clickTarget = event.target;
 
   if (clickTarget.className === "button-buy") {
+    const objVerify = {
+      size: undefined,
+      color: undefined,
+    };
+
+    // objVerify.size = variableSize;
+    // objVerify.color = variableColor;
+
+    // Object.values(objVerify).some((value) => value == undefined);
+
     emptyCart.style.display = "none";
 
     const verifyItem = items.some((elem) => elem.id == clickTarget.id);
@@ -333,12 +358,12 @@ addEventListener("click", (event) => {
     if (!verifyItem) {
       const selectedItem = database.find((item) => item.id == clickTarget.id);
       items.push(selectedItem);
+      localStorage.setItem("@item:", JSON.stringify(items));
       addClotheCart(items);
     }
   }
   if (clickTarget.className === "trash-icon") {
     items = items.filter((elem) => elem.id != clickTarget.id);
-
     addClotheCart(items);
   }
 });
@@ -346,26 +371,29 @@ addEventListener("click", (event) => {
 const shoppingCart = (contentQuantityClothes, quantityCount, item) => {
   if (contentQuantityClothes) {
     contentQuantityClothes.addEventListener("click", (event) => {
+      const subtotalPrice = document.querySelector(".subtotal");
+
       if (event.target.classList.value == "button-quantity-more") {
         item.quantity++;
         quantityCount.innerHTML = item.quantity;
+        subtotalCart(items, subtotalPrice);
       }
       if (
         event.target.classList.value == "button-quantity-less" &&
-        item.quantity > 0
+        item.quantity > 1
       ) {
         item.quantity--;
         quantityCount.innerHTML = item.quantity;
+        subtotalCart(items, subtotalPrice);
       }
     });
   }
 };
 
 const subtotalCart = (items, subtotalPrice) => {
-  const cartItems = items.reduce(
-    (acc, currentValue) => acc + currentValue.promotionPrice,
-    0
-  );
+  const cartItems = items.reduce((acc, currentValue) => {
+    return acc + currentValue.promotionPrice * currentValue.quantity;
+  }, 0);
 
   subtotalPrice.innerHTML = cartItems.toFixed(2);
 };
